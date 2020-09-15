@@ -10,10 +10,11 @@ public class Funcionario extends Pessoa {
     private Percentage percentual;
 
     //construtor
-    public Funcionario(int anoContratacao, double salarioInicial, Percentage percentual) {
+    public Funcionario(int anoContratacao, double salarioInicial, Percentage percentual,string nome, String rg) {
     this.salarioInicial = getSalarioInicial();
     this.salarioTotal = salarioTotal;
     this.percentual = getPercentual();
+    super(nome, rg);
     }
     
     public double aumentoSalarial(int anoContratacao){
